@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9093f6e6-8c8b-4d1e-8223-8f49d452f934" name="soapDb">
+        <fileTransfer rootFolder="/home/dh_ncdbgh/getbluetech.co/" accessType="SFTP" host="iad1-shared-b7-28.dreamhost.com" port="22" sshConfigId="2591a6dc-19aa-4f29-a74d-ab4d37d32a06" sshConfig="dh_ncdbgh@iad1-shared-b7-28.dreamhost.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="iad1-shared-b7-28.dreamhost.com" id="2591a6dc-19aa-4f29-a74d-ab4d37d32a06" port="22" nameFormat="DESCRIPTIVE" username="dh_ncdbgh" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

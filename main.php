@@ -9,10 +9,9 @@ include 'function.php';
 
 // Procesar datos recibidos del servicio SOAP
 foreach ($soapProducts as $item) {
-    // Crear o actualizar familias
+
     upsertFamily($conn, $item->familia_id, $item->familia);
 
-    // Crear o actualizar productos
     upsertProduct($conn, $item->codigo, $item->descripcion, $item->familia_id, $item->marca, $item->stock, $item->image_url);
 }
 
