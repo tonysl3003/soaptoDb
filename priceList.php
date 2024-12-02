@@ -1,9 +1,9 @@
 <?php
 
-$servername = "agni.iad1-mysql-e2-9b.dreamhost.com";
-$username = "apipython";
-$password = "apipython22";
-$dbname = "apipython";
+$servername = "localhost";
+$username = "aqexsbali_diviaNew";
+$password = "r_GYguYQ+g_E";
+$dbname = "aqexsbali_diviaNew";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -28,16 +28,6 @@ $clients = [
         'ws_passwd' => 'CODIGO53',
         'column' => 'lista3'
     ],
-    [
-        'ws_pid' => 219,
-        'ws_passwd' => 'CODE219',
-        'column' => 'lista4'
-    ],
-    [
-        'ws_pid' => 1943,
-        'ws_passwd' => 'CODE1943',
-        'column' => 'lista5'
-    ]
 ];
 
 $siretUrl = 'eurocompcr.com';
@@ -75,7 +65,9 @@ foreach ($clients as $clientConfig) {
             ON DUPLICATE KEY UPDATE $column = VALUES($column)
         ");
         $stmt->bind_param("sdi", $sku, $precio, $provId);
-        $stmt->execute();
+        if (!$stmt->execute()) {
+            echo "Error al actualizar el SKU $sku para la columna $column: " . $stmt->error . PHP_EOL;
+        }
         $stmt->close();
     }
 
